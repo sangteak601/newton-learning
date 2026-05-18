@@ -1,0 +1,17 @@
+[workspace]
+authors = ["Sangtaek Lee <sangteak601@gmail.com>"]
+channels = ["conda-forge"]
+name = "newton-learning"
+platforms = ["linux-64"]
+version = "0.1.0"
+
+[tasks]
+
+[dependencies]
+newton = ">=1.2.0,<2"
+pyglet = ">=2.1.14,<3"
+trimesh = ">=4.12.2,<5"
+scipy = ">=1.17.1,<2"
+
+[pypi-dependencies]
+newton = { version = "*", extras = ["examples"] }
